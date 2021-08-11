@@ -1,0 +1,10 @@
+<ol>
+    {% for produto in lista_de_produtos %}
+        <li>
+            {{ produto.nome }}
+            <ul>    
+                <li>{{ produto.valor }}</li>
+            </ul>
+        </li>
+    {% endfor %} 
+</ol>

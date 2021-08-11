@@ -1,0 +1,13 @@
+<h1>Criar cliente</h1>
+
+<form method="POST" action="">
+    {% csrf_token %}
+
+    {% for field in form %}
+        <p>{{field.label}}
+        <br>
+        {{field}}</p>
+    {% endfor %}
+
+    <input type="submit" name="Criar cliente">
+</form>
